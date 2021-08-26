@@ -1,0 +1,35 @@
+
+$fontSize: 16px;
+$color: blue;
+$defaultPadding: 100px;
+$bodyBg: lightgray;
+body {
+    background: $bodyBg;
+    .main_content {
+        display: flex;
+        height: 100vh;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        &__heading {
+            padding: $defaultPadding;
+            box-sizing: border-box;
+            border: 1px solid $color;
+        }
+        &__description {
+            padding: $defaultPadding;
+            border: 1px solid $color;
+            box-sizing: border-box;
+        }
+        .default_button {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid;
+            background: #fff;
+            &--red {
+                background: red;
+                color: #fff;
+            }
+        }
+    }
+}
